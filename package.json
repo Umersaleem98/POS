@@ -1,0 +1,36 @@
+{
+  "name": "pos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "db:setup": "node scripts/setup.mjs",
+    "test": "node --experimental-strip-types --test --test-isolation=none tests/*.test.mjs",
+    "format": "prettier --write src scripts tests package.json tsconfig.json next.config.ts README.md",
+    "test:integration": "node --experimental-strip-types --test --test-isolation=none tests/*integration.test.mjs",
+    "db:migrate": "node --experimental-strip-types scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.0",
+    "jose": "^6.1.0",
+    "lucide-react": "^0.468.0",
+    "mysql2": "^3.15.0",
+    "next": "^16.0.0",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "prettier": "^3.9.9",
+    "typescript": "^5.9.0"
+  },
+  "type": "module"
+}
