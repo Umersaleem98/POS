@@ -2,6 +2,8 @@
 
 `images/cover.png` is a promotional illustration generated with the built-in image generation tool, in generate mode. It does not claim hardware integration.
 
+`images/social-preview.jpg` is a JPEG encoding of the same cover, retaining its dimensions and composition. It fits GitHub's social-preview upload limit of 1 MB.
+
 ## Final cover prompt
 
 +Use case: ads-marketing
